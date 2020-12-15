@@ -40,7 +40,16 @@
         <section class="hero section">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <a class="button primary" href="#">Заказать услугу</a>  
+                <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="close" data-modal-close>
+                            <svg width="11" height="11">
+                                <use href="./image/symbol-icons.svg#icon-Vector"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div> 
             </div>
         </section>
         
@@ -88,9 +97,21 @@
             <div class="container work-exemple">
               <h2 class="section-title">Чем мы занимаемся</h2>        
                 <ul class="our-work-exemple">
-                <li class="img"><a href="#"><img src="./image/box1.jpg" alt="верстка" width="370"></a></li>
-                <li class="img"><a href="#"><img src="./image/box2.jpg" alt="адаптация" width="370"></a></li>
-                <li class="img"><a href="#"><img src="./image/box3.jpg" alt="дизайн" width="370"></a></li>
+                <li class="img"><a href="#"><img src="./image/box1.jpg" alt="верстка">
+                <div class="work-exemple-text"> 
+                    <p>Десктопные приложения</p>
+                </div>
+                </a></li>
+                <li class="img"><a href="#"><img src="./image/box2.jpg" alt="адаптация">
+                <div class="work-exemple-text"> 
+                    <p>Мобильные приложения</p>
+                </div>
+                </a></li>
+                <li class="img"><a href="#"><img src="./image/box3.jpg" alt="дизайн">
+                <div class="work-exemple-text"> 
+                    <p>Дизайнерские решения</p>  
+                </div>
+                </a></li>
                 </ul>  
             </div>
         </section>        
@@ -387,12 +408,12 @@
                                     </a>
                                 </li>
                             </ul>
-                
-            
-
             </div>
         </div>
         
     </footer>
 </body>
+
+<!-- Ставим перед закрывающим тегом body -->
+  <script src="./js/modal.js"></script>
 </html>
